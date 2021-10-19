@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QWidget>
+#include "encoder.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -20,7 +21,7 @@ private slots:
 
 private:
     void makeConnections();
-
+    encoder encoderInstance;
     Ui::MainWindow *ui;
 };
 #endif // MAINWINDOW_H

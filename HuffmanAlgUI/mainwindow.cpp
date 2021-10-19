@@ -20,19 +20,17 @@ void MainWindow::onExceuteBtnClicked()
 {
     QString text = ui->textFieldInput->toPlainText();
 
-    std::string stdStrText = text.toStdString();
+    encoderInstance.Compress(text.toStdString());
 
-    // Pasar stdStrText por el algoritmo de compresión
+    QString encodedText = QString::fromStdString(encoderInstance.getEncodedText());
 
-    // Añadir el nuevo texto comprimido a una variable
+    ui->compText->setText(encodedText);
 
-    // pasarlo a formato QString puede ser con QString str = QString::fromUtf8(nombreVariable.c_str());
+    encoderInstance.Decompress(encodedText.toStdString());
 
-    //correr ui->compText->setText(textoComprimido)
+    QString decompressedText = QString::fromStdString(encoderInstance.getDecodedText());
 
-    //como acà : este añade el texto que haya escrito en decompText
-
-    ui->decompText->setText(text);
+    ui->decompText->setText(decompressedText);
 }
 
 void MainWindow::makeConnections()

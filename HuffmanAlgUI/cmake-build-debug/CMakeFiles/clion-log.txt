@@ -1,0 +1,13 @@
+"C:\Program Files\JetBrains\CLion 2021.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" "Z:\Uni\2021 II Semestre\Algoritmos y Estructuras de Datos II\Actividades\Huffman\Ad\HuffmanAlgorithm\HuffmanAlgUI"
+CMake Error at CMakeLists.txt:12 (find_package):
+  Could not find a configuration file for package "Qt6" that is compatible
+  with requested version "".
+
+  The following configuration files were considered but not accepted:
+
+    Z:/devTools/Qt/6.2.0/mingw81_64/lib/cmake/Qt6/Qt6Config.cmake, version: 6.2.0 (64bit)
+
+
+
+-- Configuring incomplete, errors occurred!
+See also "Z:/Uni/2021 II Semestre/Algoritmos y Estructuras de Datos II/Actividades/Huffman/Ad/HuffmanAlgorithm/HuffmanAlgUI/cmake-build-debug/CMakeFiles/CMakeOutput.log".

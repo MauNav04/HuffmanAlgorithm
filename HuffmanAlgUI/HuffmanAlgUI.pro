@@ -13,6 +13,7 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
+    encoder.h \
     mainwindow.h
 
 FORMS += \
